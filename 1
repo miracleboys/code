@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(void)
+{
+	int x, y;
+
+	printf("input x=");
+	scanf_s("%d", &x);
+	if (x <= 0)
+	{
+		if (x <= -10)
+			y = x * 10;
+		else y = x + 10;
+	}
+	else
+	{
+		if (x >= 10)
+			y = x * 10;
+		else y = x - 10;
+	}
+	printf("%d", y);
+}
