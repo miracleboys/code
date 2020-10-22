@@ -1,0 +1,26 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main(void)
+{
+	int score, grade;
+
+	printf("Input a score (0~100)\n");
+	scanf("%d", &score);
+	grade = score / 10;
+	switch (grade)
+	{
+	case 10:
+	case 9: printf("grade=A\n"); break;
+	case 8: printf("grade=B\n"); break;
+	case 7: printf("grade=C\n"); break;
+	case 6: printf("grade=D\n"); break;
+	case 5:
+	case 4:
+	case 3:
+	case 2:
+	case 1:
+	case 0: printf("grade=E\n"); break;
+	default: printf("The score is out of range1!\n");
+
+	}
+}
