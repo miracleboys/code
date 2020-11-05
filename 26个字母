@@ -1,0 +1,22 @@
+define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main(void)
+{
+	char c;
+
+	printf("输入u显示大写字母，输入i显示小写字母:");
+	scanf("%c", &c);
+	if (c == 'U' || c == 'u')
+	{
+		for (c = 'A'; c <= 'Z'; c++)
+			printf("%c ", c);
+	}
+	else if (c == 'I' || c == 'i')
+	{
+		for (c = 'a'; c <= 'z'; c++)
+			printf("%c ", c);
+	}
+	else
+		printf("Error\n");
+	return 0;
+}
