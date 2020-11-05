@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main(void)
+{
+	int j, z;
+	long long u=1;
+
+	printf("请输入基数:");
+	scanf("%d", &j);
+	printf("请输入指数:");
+	scanf("%d", &z);
+	while (z != 0)
+	{
+		u *= j;
+		z--;
+	}
+	printf("结果：%lld", u);
+	return 0;
+}
